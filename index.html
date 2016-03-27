@@ -1,186 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+  <title>Shower Presentation Engine</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
 </head>
 <body class="shower list">
-	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
-	</header>
-	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
-		<style>
-			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
-		</style>
-	</section>
-	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</section>
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</section>
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</section>
-	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</section>
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
-	</section>
-	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
-	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
-	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
-	</section>
-	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
-	<div class="progress"></div>
-	<script src="node_modules/shower-core/shower.min.js"></script>
-	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
+  <header class="caption">
+    <h1>Постпроцессоры - контролируемое будущее</h1>
+    <p>Ruslan Abdullaev</p>
+  </header>
+  <section class="slide section" id="cover">
+    <h2>Постпроцессоры</h2>
+    <p>контролируемое будущее</p>
+    <header>Руслан Абдуллаев, 2016</header>
+    <img src="pictures/cover.jpg" alt="" class="cover">
+    <!-- <img src="pictures/Babylon.jpg" alt="" class="cover"> -->
+    <!--
+      To apply styles to the certain slides
+      set slide ID to get needed elements
+      -->
+  </section>
+  <section class="slide">
+    <h2>Преимущество постпроцессоров:</h2>
+    <ol>
+      <li class="next">Возможность самостоятельного расширения</li>
+      <li class="next">Гибкость и недетерминированность</li>
+      <li class="next">Стандартный синтаксис</li>
+      <li class="next">Высокая производительность</li>
+    </ol>
+  </section>
+  <section class="slide">
+    <h2>История развития постпроцессоров</h2>
+    <ol>
+      <li class="next">2012 - <a href="https://github.com/reworkcss/rework">Rework</a> (TJ Holowaychuk)</li>
+      <li class="next">2013 - <a href="https://github.com/postcss/postcss">PostCSS</a> (Andrey Sitnik)</li>
+      <li class="next">2015 - <a href="https://github.com/posthtml/posthtml">PostHTML</a> ( The Protein Corp. )</li>
+    </ol>
+  </section>
+  <section class="slide section logo-section">
+      <img class="posthtml-logo" src="pictures/posthtml-logo_min.svg" alt="">
+  </section>
+  <section class="slide">
+      <h2>Внутренняя структура PostHTML</h2>
+      <div class="block-scheme">
+          <div class="block-scheme__item block-scheme__item_data next">HTML/XML</div>
+          <div class="block-scheme__item block-scheme__item_core next">Парсер</div>
+          <div class="block-scheme__item block-scheme__item_core next">Рендер</div>
+          <div class="block-scheme__item block-scheme__item_data next">Новый HTML</div>
+      </div>
+  </section>
+  <section class="slide">
+      <h2>Внутренняя структура PostHTML</h2>
+      <div class="block-scheme">
+          <div class="block-scheme__item block-scheme__item_data">HTML/XML</div>
+          <div class="block-scheme__item block-scheme__item_core">Парсер</div>
+          <div class="block-scheme__item">Плагин</div>
+          <div class="block-scheme__item">Плагин</div>
+          <div class="block-scheme__item block-scheme__item_core">Рендер</div>
+          <div class="block-scheme__item block-scheme__item_data">Новый HTML</div>
+      </div>
+  </section>
+  <section class="slide">
+    <h2>Экосистема PostHTML</h2>
+    <ul>
+      <li>PostHTML Core ( <a href="https://github.com/posthtml/posthtml-parser">posthtml-parser</a>, <a href="https://github.com/posthtml/posthtml-render">posthtml-render</a> )</li>
+      <li class="next">Plugins ( <a href="http://maltsev.github.io/posthtml-plugins/">PostHTML Plugins Catalog</a> )</li>
+      <li class="next">Bindings ( <a href="">posthtml-cli</a>, <a href="https://www.npmjs.com/package/gulp-posthtml">gulp-posthtml</a>, <a href="https://www.npmjs.com/package/grunt-posthtml">grunt-posthtml</a>, <a href="https://www.npmjs.com/package/posthtml-loader">posthtml-loader</a>, )</li>
+      <li class="next">Middlewares ( <a href="https://github.com/michael-ciniawsky/koa-posthtml">Koa</a>, <a href="https://github.com/michael-ciniawsky/hapi-posthtml">Hapi</a>, <a href="https://github.com/michael-ciniawsky/express-posthtml">Express</a>, <a href="https://github.com/posthtml/posthtml/blob/master/github.com/michael-ciniawsky/electron-posthtml">Electron</a> )</li>
+      <li class="next"><a href="https://gitter.im/posthtml/posthtml">PostHTML Gitter</a></li>
+    </ul>
+  </section>
+  <section class="slide section">
+    <h2 class="shout shrink">Plugins</h2>
+  </section>
+  <section class="slide">
+    <h2><a href="https://github.com/rajdee/posthtml-bem">posthtml-bem</a></h2>
+    <pre class="next">
+      <code>&lt;div <mark>block="animal"</mark>&gt;
+    &lt;div <mark>elem="nose"</mark> <mark>mods="size:long"</mark>&gt;Nose&lt;/div&gt;
+&lt;/div&gt;</code>
+    </pre>
+      <pre class="next">
+        <code>&lt;div <mark>class="animal"</mark>&gt;
+    &lt;div <mark>class="animal__nose animal__nose_size_long"</mark>&gt;
+          Nose&lt;/div&gt;
+&lt;/div&gt;</code>
+      </pre>
+  </section>
+  <section class="slide">
+    <h2><a href="https://github.com/rajdee/posthtml-bem#mixes">posthtml-bem (mix-example)</a></h2>
+    <pre class="next">
+      <code>&lt;div
+  block="animal"
+  <mark>mix="block:elephant elem:trunk mods:[size:short broken],
+  block:cow mods:[moo]"</mark>&gt;
+      &lt;div elem="nose" mods="size:long"&gt;Nose&lt;/div&gt;
+&lt;/div&gt;</code>
+    </pre>
+  </section>
+  <section class="slide">
+      <h2><a href="https://github.com/rajdee/posthtml-bem#mixes">posthtml-bem (mix-example)</a></h2>
+    <pre>
+      <code>&lt;div class="animal
+    <mark>elephant__trunk
+    elephant__trunk_size_short
+    elephant__trunk_broken
+    cow cow_moo"</mark>&gt;
+      &lt;div class="animal__nose animal__nose_size_long"&gt;
+            Nose&lt;/div&gt;
+&lt;/div&gt;</code>
+    </pre>
+  </section>
+  <section class="slide">
+      <h2><a href="https://github.com/rajdee/posthtml-bem#with-jade-and-gulp">posthtml-bem (jade example)</a></h2>
+    <pre>
+      <code>div(<mark>block='animals'</mark>)
+    div(<mark>elem='rabbit' mods='color:white'</mark>)
+    div(<mark>elem='dormouse' mods='color:red'</mark>)</code>
+    </pre>
+    <pre class="next pre_small">
+      <code>&lt;div <mark>class="animals"&gt;</mark>
+    &lt;div <mark>class="animals__rabbit animals__rabit_color_white"</mark>&gt;
+    &lt;div <mark>class="animals__dormouse animals__dormouse_color_red"&gt;</mark>)
+&lt;/div&gt;</code>
+    </pre>
+  </section>
+  <section class="slide">
+      <h2><a href="https://github.com/rajdee/posthtml-classes">posthtml-classes</a></h2>
+    <pre class="next">
+    <code>&lt;div class="<mark>animal</mark>"&gt;
+    &lt;div class="<mark>animal__nose animal__nose_size_long
+      elephant__trunk elephant__trunk_size_short
+      elephant__trunk_color_brown</mark>"&gt;
+          Nose
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+    </pre>
+  </section>
+  <section class="slide">
+      <h2><a href="https://github.com/rajdee/posthtml-classes">posthtml-classes</a></h2>
+      <div class="column-container">
+          <div class="column-container__column">
+            <pre>
+                <code>.animal {}</code>
+                <code>.animal__nose {}</code>
+                <code>.animal__nose_size_long {}</code>
+                <code>.elephant__trunk {}</code>
+                <code>.elephant__trunk_size_short {}</code>
+                <code>.elephant__trunk_color_brown {}</code>
+            </pre>
+          </div>
+      </div>
+  </section>
+  <section class="slide">
+      <h2><a href="https://github.com/rajdee/posthtml-classes">posthtml-classes ( nested example )</a></h2>
+          <div class="column-container__column">
+            <pre class="pre_small">
+                <code>.animal {</code>
+                <code>  &__nose {</code>
+                <code>      &_size_long {}</code>
+                <code>  }</code>
+                <code>}</code>
+                <code>.elephant {</code>
+                <code>  &__trunk {</code>
+                <code>      &_size_short {}</code>
+                <code>      &_color_brown {}</code>
+                <code>  }</code>
+                <code>}</code>
+            </pre>
+          </div>
+  </section>
+  <section class="slide">
+    <h2><a href="https://github.com/roman01la/html-to-react-components">HTML-to-React-Components</a></h2>
+    <pre class="pre_small next">
+      <code>&lt;!DOCTYPE html&gt;
+      ...
+    &lt;header class="header"&gt;
+        &lt;h1 class="heading"&gt;
+            Hello, world!
+        &lt;/h1&gt;
+    &lt;/header&gt;
+      ...</code>
+    </pre>
+  </section>
+  <section class="slide">
+    <h2><a href="https://github.com/roman01la/html-to-react-components">HTML-to-React-Components</a></h2>
+    <pre class="pre_small">
+      <code>&lt;!DOCTYPE html&gt;
+      ...
+    &lt;header class="header" <mark>data-component="Header"</mark>&gt;
+        &lt;h1 class="heading" <mark>data-component="Heading"</mark>&gt;
+            Hello, world!
+        &lt;/h1&gt;
+    &lt;/header&gt;
+      ...</code>
+      </pre>
+      <div class="next console">
+        <pre>
+          $ html2react index.html -c es5 -m es6 -e js -o ./components
+        </pre>
+      </div>
+  </section>
+  <section class="slide">
+    <h2>header.js</h2>
+    <pre class="pre_small">
+      <code>import React, { Component } from 'react';
+import Heading from './heading';
+
+class <mark>Header</mark> extends Component {
+  render() {
+    return (
+      &lt;header className="header"&gt;&lt;/header&gt;
+        <mark>&lt;Heading&gt;&lt;/Heading&gt;</mark>
+      &lt;/header&gt;
+    );
+  }
+}
+export default Header;</code>
+    </pre>
+  </section>
+  <section class="slide">
+    <h2>heading.js</h2>
+    <pre>
+      <code>import React, { Component } from 'react';
+  class Heading extends Component {
+    render() {
+      return &lt;h1 className="heading"&lt;Hello, world!&lt;/h1>;
+    }
+  }
+  export default Heading;</code>
+    </pre>
+  </section>
+  <section class="slide">
+      <h2>Плагины PostHTML</h2>
+          <ul>
+            <li class="next"><a href="https://github.com/posthtml/posthtml-postcss">posthtml-postcss</a></li>
+            <li class="next"><a href="https://github.com/maltsev/htmlnano">htmlnano</a></li>
+            <li class="next"><a href="https://github.com/maltsev/posthtml-css-modules">posthtml-css-modules</a></li>
+            <li class="next"><a href="https://github.com/posthtml/posthtml-custom-elements">posthtml-custom-elements</a></li>
+            <li class="next"><a href="https://github.com/TCotton/posthtml-head-elements">posthtml-head-elements</a></li>
+            <li class="next"><a href="https://github.com/jonathantneal/posthtml-schemas">posthtml-schemas</a></li>
+            <li class="next"><a href="https://github.com/michael-ciniawsky/posthtml-exp">posthtml-exp</a></li>
+          </ul>
+  </section>
+  <section class="slide section">
+  <h2>Спасибо за внимание!</h2>
+
+  <div class="contacts">
+      <p><span>Github:</span><a href="https://github.com/rajdee/">github.com/rajdee</a></p>
+      <p><span>Twitter:</span><a href="https://twitter.com/rajdee_mhm">@rajdee_mhm</a></p>
+
+  </div>
+  </section>
+  <p class="badge">
+    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+  </p>
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"></div>
+  <script src="node_modules/shower-core/shower.min.js"></script>
+  <!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+  <!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
 </html>
